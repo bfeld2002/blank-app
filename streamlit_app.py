@@ -10,7 +10,7 @@ st.write("Adjust the sliders for each of the 10 features:")
 with st.form("input_form"):
     inputs = []
     for i in range(1, 11):
-        value = st.slider(f"Feature {i}", min_value=0.0, max_value=100.0, value=50.0, step=0.1)
+        value = st.slider(f"Feature {i}", min_value=0, max_value=5, value=5, step=1)
         inputs.append(value)
     
     submitted = st.form_submit_button("Submit")
